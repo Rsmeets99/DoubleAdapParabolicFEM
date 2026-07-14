@@ -1,0 +1,7 @@
+dimension,example,csv_path,case_count,outer_rows,inner_rows,inner_summary_rows
+1d,boundary_singularity,1d/boundary_singularity.csv,12,383,448,383
+1d,non_matching_initial,1d/non_matching_initial.csv,12,394,402,394
+1d,smooth_initial,1d/smooth_initial.csv,15,490,732,490
+2d,boundary_singularity,2d/boundary_singularity.csv,9,238,240,238
+2d,non_matching_initial,2d/non_matching_initial.csv,9,220,220,220
+2d,smooth_initial,2d/smooth_initial.csv,12,360,367,360

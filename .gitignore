@@ -1,0 +1,96 @@
+# Build output directories
+out/
+build/
+
+# Generated data trees
+data/*
+!data/README.md
+algorithm_data/*
+!algorithm_data/README.md
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+
+# Ninja build system files (if used)
+build.ninja
+.ninja_log
+.ninja_deps
+rules.ninja
+
+# IDE files
+*.code-workspace
+.vscode/
+.idea/
+.codex
+.agents/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor swap/backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Object files and static/dynamic libs
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.run
+
+# Test outputs
+test_output/
+Testing/
+
+# Logs
+*.log
+
+# Coverage and profiling
+*.gcno
+*.gcda
+*.gcov
+*.profraw
+*.profdata
+
+# External libraries you don’t want to track
+libs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.venv/
+venv/
+.python-version
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/

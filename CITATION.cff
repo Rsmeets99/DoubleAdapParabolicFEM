@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code in your work/research, please cite it using the following metadata."
+authors:
+- family-names: "Gantner"
+  given-names: "Gregor"
+- family-names: "Smeets"
+  given-names: "Robin"
+- family-names: "Stevenson"
+  given-names: "Rob"
+title: "TBD"
+date-released: 2026-04-23
+repository-code: "https://github.com/Rsmeets99/AdapParabolicFEM"
+license: 
+  - MIT
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Gantner"
+    given-names: "Gregor"
+  - family-names: "Smeets"
+    given-names: "Robin"
+  - family-names: "Stevenson"
+    given-names: "Rob"
+  title: "TBD"
+  journal: "TBD"
+  year: 2026

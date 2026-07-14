@@ -1,0 +1,56 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "snellius-production-base",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "CMAKE_BUILD_TYPE": "Release",
+                "ENABLE_MKL_PARDISO": "ON"
+            }
+        },
+        {
+            "name": "release-snellius-generic-mkl-pardiso",
+            "inherits": "snellius-production-base",
+            "displayName": "Snellius Release (Generic x86-64) + MKL Pardiso",
+            "description": "Production Snellius build for binaries that may run on different CPU generations.",
+            "cacheVariables": {
+                "ADAPPARABOLICFEM_COMPILE_OPTIONS": "-O2;-DNDEBUG"
+            }
+        },
+        {
+            "name": "release-snellius-rome-mkl-pardiso",
+            "inherits": "snellius-production-base",
+            "displayName": "Snellius Release (AMD Rome / Zen 2) + MKL Pardiso",
+            "description": "Production Snellius build for Rome nodes only. Use the generic preset for mixed-node submissions.",
+            "cacheVariables": {
+                "ADAPPARABOLICFEM_COMPILE_OPTIONS": "-O2;-march=znver2;-DNDEBUG"
+            }
+        },
+        {
+            "name": "release-snellius-genoa-mkl-pardiso",
+            "inherits": "snellius-production-base",
+            "displayName": "Snellius Release (AMD Genoa / Zen 4) + MKL Pardiso",
+            "description": "Production Snellius build for Genoa nodes only. If the compiler does not support znver4, use the generic preset.",
+            "cacheVariables": {
+                "ADAPPARABOLICFEM_COMPILE_OPTIONS": "-O2;-march=znver4;-DNDEBUG"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build-release-snellius-generic-mkl-pardiso",
+            "configurePreset": "release-snellius-generic-mkl-pardiso"
+        },
+        {
+            "name": "build-release-snellius-rome-mkl-pardiso",
+            "configurePreset": "release-snellius-rome-mkl-pardiso"
+        },
+        {
+            "name": "build-release-snellius-genoa-mkl-pardiso",
+            "configurePreset": "release-snellius-genoa-mkl-pardiso"
+        }
+    ]
+}
