@@ -7,7 +7,7 @@ authors:
   given-names: "Robin"
 - family-names: "Stevenson"
   given-names: "Rob"
-title: "TBD"
+title: "A DOUBLE-ADAPTIVITY SOLVER FOR PARABOLIC PDES"
 date-released: 2026-04-23
 repository-code: "https://github.com/Rsmeets99/AdapParabolicFEM"
 license: 
@@ -21,6 +21,6 @@ preferred-citation:
     given-names: "Robin"
   - family-names: "Stevenson"
     given-names: "Rob"
-  title: "TBD"
+  title: "A DOUBLE-ADAPTIVITY SOLVER FOR PARABOLIC PDES"
   journal: "TBD"
   year: 2026
